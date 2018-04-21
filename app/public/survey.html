@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend-Finder</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<style type="text/css">
+body {
+    max-width: 90%;
+    margin-left: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+.form-control {
+    width: 30%;
+}
+
+button[type=submit] {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    top: 20px;
+    background: white;
+    color: black;
+    border: 1 solid blue;
+}
+</style>
+
+<body>
+    <div>
+        <h1>Survey Questions</h1>
+        <hr>
+    </div>
+    <div>
+        <h3>About You</h3>
+        <form id="about-you-form">
+            <div>
+                <label for="name">Name (Required)</label>
+                <input type="text" id="name" name="name" placeholder="John" required="required">
+            </div>
+            <div>
+                <label for="photo">Photo Image (Required)</label>
+                <input type="text" id="photo" name="photo" placeholder="https://..." required="required">
+            </div>
+        </form>
+    </div>
+    <div>
+        <hr>
+        <form id="score">
+            <h3>Question 1</h3>
+            <div>
+                <label for="Question-1">honesty is very inportant to me</label>
+                <select class="form-control" id="dropdownMenu1">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 2</h3>
+            <div>
+                <label for="Question-2">I love pets</label>
+                <select class="form-control" id="dropdownMenu2">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 3</h3>
+            <div>
+                <label for="Question-3">Respect is very inportant to me</label>
+                <select class="form-control" id="dropdownMenu3">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 4</h3>
+            <div>
+                <label for="Question-4">I love cooking</label>
+                <select class="form-control" id="dropdownMenu4">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 5</h3>
+            <div>
+                <label for="Question-5">I love sports</label>
+                <select class="form-control" id="dropdownMenu5">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 6</h3>
+            <div>
+                <label for="Question-6">Personal space is very inportant to me</label>
+                <select class="form-control" id="dropdownMenu6">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 7</h3>
+            <div>
+                <label for="Question-7">I alway make time for my family</label>
+                <select class="form-control" id="dropdownMenu7">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 8</h3>
+            <div>
+                <label for="Question-8">My kids drive me nuts</label>
+                <select class="form-control" id="dropdownMenu8">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 9</h3>
+            <div>
+                <label for="Question-9">I love to read</label>
+                <select class="form-control" id="dropdownMenu9">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <h3>Question 10</h3>
+            <div>
+                <label for="Question-10">Donald Trump is the best</label>
+                <select class="form-control" id="dropdownMenu10">
+                    <button class="btn btn-default dropdown-toggle" type="button" placeholder="Select an Option">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </button>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit"> <span class="glyphicon glyphicon-ok"> Submit</span></button>
+        </form>
+        <hr>
+    </div>
+    <nav>
+        <a href="/api/friends">API Friends List |</a>
+        <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a>
+    </nav>
+</body>
+
+</html>
+<script type="text/javascript">
+// Question: What does this code do?
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+
+    var guess1 = $("#dropdownMenu1").val();
+    var guess2 = $("#dropdownMenu2").val();
+    var guess3 = $("#dropdownMenu3").val();
+    var guess4 = $("#dropdownMenu4").val();
+    var guess5 = $("#dropdownMenu5").val();
+    var guess6 = $("#dropdownMenu6").val();
+    var guess7 = $("#dropdownMenu7").val();
+    var guess8 = $("#dropdownMenu8").val();
+    var guess9 = $("#dropdownMenu9").val();
+    var guess10 = $("#dropdownMenu10").val();
+
+    var optionArry = [parseInt(guess1[0]), parseInt(guess2[0]), parseInt(guess3[0]), parseInt(guess4[0]), parseInt(guess5[0]), parseInt(guess6[0]), parseInt(guess7[0]), parseInt(guess8[0]), parseInt(guess9[0]), parseInt(guess10[0])];
+
+
+    var newfriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        score: optionArry
+
+    };
+    console.log(newfriend);
+
+    // Question: What does this code do??
+    $.post("/api/friends", newfriend)
+        .then(function(data) {
+            console.log(data);
+            alert("Adding friend...");
+
+        });
+
+});
+
+</script>
